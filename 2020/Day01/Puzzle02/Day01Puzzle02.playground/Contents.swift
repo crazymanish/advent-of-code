@@ -26,8 +26,7 @@ func find3ValuePairs(for input: Int, from numbers: [Int]) -> (Int, Int, Int) {
     var index = 0
     for number in numbers {
         index += 1
-        print(index)
-        
+
         pairs[number] = number
         let remainingNumber = input - number
         let remainingNumberPair = findPairs(for: remainingNumber, from: Array(pairs.keys))
